@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web Resto Bahari</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-inner">
+        <div class="logo">Resto<span>Bahari</span></div>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#video">Video</a></li>
+          <li><a href="#kontak">Tentang Kami</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="hero" id="home">
+      <div class="hero-inner">
+        <h1>Cita rasa dunia,<br />dalam setiap piring</h1>
+        <div class="accent-line"></div>
+        <p>
+          Selamat datang di Resto Bahari Kami menyediakan
+          berbagai makanan dan minuman dengan cita rasa
+          yang lezat, disiapkan dengan bahan segar setiap hari.
+        </p>
+      </div>
+    </header>
+
+    <section class="menu-section" id="menu">
+      <h2>Menu Kami</h2>
+      <p class="section-sub">Pilihan terbaik dari dapur kami untuk kamu</p>
+
+      <h3 class="menu-category">Menu Makanan</h3>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <span class="menu-name">Nasi Goreng</span>
+            <span class="menu-price">$3</span>
+          </div>
+          <p class="menu-desc">Nasi goreng khas dengan bumbu rempah pilihan.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <span class="menu-name">Ayam Bakar + Nasi</span>
+            <span class="menu-price">$4</span>
+          </div>
+          <p class="menu-desc">Ayam bakar bumbu kecap dengan nasi hangat.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <span class="menu-name">Mie Ayam Bakso</span>
+            <span class="menu-price">$3</span>
+          </div>
+          <p class="menu-desc">Mie ayam gurih dilengkapi bakso sapi pilihan.</p>
+        </div>
+      </div>
+
+      <h3 class="menu-category">Menu Minuman</h3>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <span class="menu-name">Es Teh</span>
+            <span class="menu-price">$1</span>
+          </div>
+          <p class="menu-desc">Teh manis dingin yang menyegarkan.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-top">
+            <span class="menu-name">Es Jeruk</span>
+            <span class="menu-price">$1</span>
+          </div>
+          <p class="menu-desc">Jeruk peras segar dengan es batu.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="video-section" id="video">
+      <h2>Video Promosi</h2>
+      <p class="section-sub">Lihat suasana dan proses masak kami</p>
+      <div class="video-wrapper">
+        <video autoplay loop muted playsinline controls>
+          <source src="video_promo.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
+
+    <footer class="footer" id="kontak">
+      <h2>Tentang Kami</h2>
+      <p>no kontak: 08xxxxxx</p>
+      <p>Jl. International No. 10, Tangerang Selatan, Banten.</p>
+      <p class="copyright">&copy; 2026 Resto Bahari</p>
+    </footer>
+  </body>
+</html>

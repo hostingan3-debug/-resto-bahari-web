@@ -1,0 +1,287 @@
+/* ===========================================================
+   style.css - International Food Restaurant (Modern Blue-Purple)
+   =========================================================== */
+
+:root {
+    --indigo-deep: #201735;
+    --indigo: #2c1f4d;
+    --violet: #3d2b66;
+    --accent-blue: #5b8def;
+    --accent-purple: #8b5cf6;
+    --cream: #f4f2ff;
+    --ink: #201735;
+    --muted: #5c5470;
+    --surface: #f8f7fc;
+    --card: #ffffff;
+    --border: #e6e1f5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--ink);
+    background: var(--surface);
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Outfit", "Inter", sans-serif;
+    margin: 0;
+}
+
+/* ---------- Navbar ---------- */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--indigo-deep);
+}
+
+.nav-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--cream);
+}
+
+.logo span {
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-purple));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #cfc9e8;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--cream);
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+    background: linear-gradient(135deg, var(--indigo-deep), var(--violet));
+    padding: 90px 24px 100px;
+}
+
+.hero-inner {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.75rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--cream);
+}
+
+.hero p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #d4cfec;
+    max-width: 560px;
+}
+
+.hero-buttons {
+    margin-top: 32px;
+    display: flex;
+    gap: 16px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-purple));
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(91, 141, 239, 0.35);
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--cream);
+    border: 1.5px solid #6a5f96;
+}
+
+.btn-outline:hover {
+    border-color: var(--accent-blue);
+}
+
+/* ---------- Sections (shared) ---------- */
+
+.menu-section,
+.video-section,
+.footer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 64px 24px;
+}
+
+.menu-section h2,
+.video-section h2,
+.footer h2 {
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.section-sub {
+    color: var(--muted);
+    margin-top: 8px;
+    margin-bottom: 32px;
+}
+
+.menu-category {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--accent-purple);
+    margin: 32px 0 16px;
+}
+
+/* ---------- Menu cards ---------- */
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+}
+
+.menu-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(91, 60, 190, 0.12);
+    border-color: var(--accent-purple);
+}
+
+.menu-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 8px;
+}
+
+.menu-name {
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+.menu-price {
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-purple));
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+}
+
+.menu-desc {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* ---------- Video ---------- */
+
+.video-wrapper {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 16px 40px rgba(44, 31, 77, 0.18);
+}
+
+.video-wrapper video {
+    display: block;
+    width: 100%;
+    background: #000;
+}
+
+/* ---------- Footer ---------- */
+
+.footer {
+    background: var(--indigo-deep);
+    border-radius: 20px 20px 0 0;
+    color: var(--cream);
+    text-align: center;
+    margin-top: 32px;
+}
+
+.footer h2 {
+    color: var(--cream);
+}
+
+.footer p {
+    color: #cfc9e8;
+    margin: 12px 0;
+}
+
+.copyright {
+    font-size: 0.85rem;
+    color: #8f87ad;
+    margin-top: 24px;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 640px) {
+    .nav-links {
+        gap: 16px;
+        font-size: 0.85rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+}
